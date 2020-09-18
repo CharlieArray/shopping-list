@@ -1,17 +1,6 @@
 $(function() {
 
-    //permanently remove items from the list//
-    $('.shopping-item-delete').on('click', function(event) {
-        event.preventDefault();
-        $(this).closest("li").remove("li");
-    }); 
-
-    //check and uncheck items on the list by clicking the "Check" button//
-    $(".shopping-item-toggle").on('click', function(event) {
-        event.preventDefault();
-      $(this).closest("li").toggleClass("shopping-item__checked");
-    });
-    
+    //enter items they need to purchase by entering text//
     $("#js-shopping-list-form").submit(function(event) {
         event.preventDefault();
         event.stopPropagation();
@@ -27,24 +16,22 @@ $(function() {
         </div></li>`;
         $(".shopping-list").append(textOutput);
     }); 
+
+    //permanently remove items from the list//
+    $('div').on('click', '.shopping-item-delete', function(event) {
+        event.preventDefault();
+        $(this).closest("li").remove("li");
+    }); 
+
+    //check and uncheck items on the list by clicking the "Check" button//
+    $(".shopping-item-toggle").on('click', function(event) {
+        event.preventDefault();
+      $(this).closest("li").toggleClass("shopping-item__checked");
+    });
+    
 });
 
 
-
-/*css class to strike through checked items//
-.shopping-item__checked 
-
-$("this").toggleClass("shopping-item__checked")
-$(event.currentTarget).toggleClass("shopping-item__checked");
-
-*/
-
-
-
-
-/*class of item
-.shopping-item
-*/
 
 
 /*
@@ -53,7 +40,7 @@ To complete this challenge requires:
 
     -Linking to your application JavaScript file from the index.html page.
 
-    -Using this and event delegation
+    -Using this and event delegation (COMPLETE)
 
 Requirements
 
@@ -71,8 +58,8 @@ Additionally:
     -Hint: you may find it helpful to read up on and use the following jQuery
     methods: 
     
-    .submit() Trigger the submit event for the selected elements 
-    .preventDefault()
+    DONE .submit() Trigger the submit event for the selected elements 
+    DONE .preventDefault()
     DONE .toggleClass()
     DONE .closest().
 
