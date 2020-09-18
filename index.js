@@ -18,13 +18,13 @@ $(function() {
     }); 
 
     //permanently remove items from the list//
-    $('div').on('click', '.shopping-item-delete', function(event) {
+    $('.shopping-list').on('click', '.shopping-item-delete', function(event) {
         event.preventDefault();
         $(this).closest("li").remove("li");
     }); 
 
     //check and uncheck items on the list by clicking the "Check" button//
-    $(".shopping-item-toggle").on('click', function(event) {
+    $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
         event.preventDefault();
       $(this).closest("li").toggleClass("shopping-item__checked");
     });
