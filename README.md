@@ -1,3 +1,4 @@
 # Shopping List App Challenge
-
-This repo contains starter files for the *Shopping List App* challenge.
+https://charliearray.github.io/shopping-list/
+This repo contains files for *Shopping List App* challenge.
+Will add more features to the list in the future.
